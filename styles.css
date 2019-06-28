@@ -1,0 +1,537 @@
+body{
+
+	max-width:100%;
+	margin: 0px;
+	padding:0px;
+}
+
+
+.container{
+	max-width:85%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	line-height: 1.2;
+}
+a:enabled {
+	color: white;
+	text-decoration: none;
+}
+.navbar a:hover {
+	text-decoration: none;
+	color: #d8d8d8;
+	background-color: #3c3c3c;
+	transition: 300ms;
+}
+sub {
+	position: relative;
+	top: 3px;
+	font-size: 11px;
+}
+.navbar {
+	background-color: black;
+	height: 80px;
+	z-index: 1070;
+	font-size: 14px;
+}
+#logo {
+	width: 8.33333%;
+}
+@media (max-width: 990px) {
+	#logo {
+		width: 120px;
+	}
+	.navbar {
+		font-size: 12px;
+	}
+}
+@media (max-width: 576px) {
+	#logo {
+		height: 45px;
+		width: 100px;
+	}
+	.navbar {
+		height: 45px;
+	}
+}
+.nav-item {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+.blackbg {
+	background-color: black;
+}
+
+.carousel-item img{
+
+	min-height: 300px;
+	width:auto;
+
+}
+
+.fa-angle-down{
+
+	padding-left: 8px;
+}
+
+.fa-bars{
+
+	padding-left: 8px;
+}
+
+.carousel-item-container {
+
+	display: flex;
+	text-align: center;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+
+
+#first-carousel-item-container {
+    background-image: url('https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/bhp/hero/adaptive-hero/mobile.jpg.image.1000.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.carousel-shadow-box {
+    margin-top: 20px;
+    height: 250px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.shadow-box-content{
+
+	padding: 20px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shadow-box-content p {
+	margin: 8px;
+	line-height: 5px;
+	color:white;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.carousel-title-image{
+
+	background-repeat: no-repeat;
+	background-size: contain;
+    min-height: 26px;
+    width: 186px;
+    background-image: url('https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/incentives/freedom-days-white-MY19.png')
+}
+
+.shadow-box-info{
+
+	display: flex;
+	flex-direction: column;
+}
+
+.shadow-box-info-middle-row{
+
+	display: flex;
+}
+
+
+.chevron::after {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f078';
+	font-weight: 700;
+	color: white;
+	font-size: 12px;
+	margin-left: 8px;
+	position: relative;
+	top: -1;
+}
+.chevron-l::after {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f078';
+	font-weight: 700;
+	color: white;
+	font-size: 12px;
+	margin-left: 8px;
+	position: absolute;
+	right: 5;
+}
+.external::after {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f35d';
+	font-weight: 700;
+	color: white;
+	font-size: 10px;
+	margin-left: 8px;
+	position: relative;
+	top: -2;
+}
+
+.globe::before {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f27a';
+	font-weight: 700;
+	color: #bfbfbf;
+	font-size: 12px;
+	margin: 9px;
+}
+.marker::before {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f3c5';
+	font-weight: 700;
+	color: #bfbfbf;
+	font-size: 14px;
+	margin: 9px;
+}
+.wrench::before {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f0ad';
+	font-weight: 700;
+	color: #bfbfbf;
+	font-size: 14px;
+	margin: 9px;
+}
+.menu {
+	font-weight: 500;
+	color: white;
+	width: auto;
+}
+.menu::after {
+	font-family: 'Font Awesome 5 Free';
+	content: ' \f0c9';
+	margin-left: 2px;
+	font-weight: 700;
+}
+
+.carousel-text{
+	
+	color: white;
+	font-weight: bold;
+	margin: 42px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.shadow-box-button-container{
+
+	margin: 20px;
+
+}
+
+.shadow-box-button{
+	background-color: #F5BB41;
+    padding:8px 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow-box-button p{
+    font-weight: bold;
+    line-height: 19px;
+    color: #000000;
+    font-size:1rem;
+
+}
+
+.shadow-box-button i {
+	color:#000;
+} 
+
+.vehicles-main-title{
+
+	font-family: arial;
+	font-weight: bold;
+	padding: 24px 0px 10px 0px;
+	text-align: center;
+	background-color: #ffffff;
+
+}
+
+.card-title{
+
+	margin-top:  -20px;
+	line-height: 14px;
+}
+
+.vehicles-msrp{
+
+	font-weight: lighter;
+	color: #787878;
+	font-size: 8px;
+}
+
+.vehicles-section{
+	background-color:white;
+}
+
+.vehicles-price{
+
+	font-size: 14px;
+	margin-top: -14px;
+}
+
+.card{
+	border:0;
+	padding:0px;
+	border-radius: 0px;
+
+}
+
+.card-body{
+
+	text-align: center;
+}
+
+.card-section3{
+    background-color: #d1d1d1;
+}
+
+.card-bg{
+
+	background-color:#000000;
+	padding-bottom: 8px;
+}
+
+.container-section3{
+
+	background-color: #d1d1d1;
+}
+
+.card-title-section3 , .card-text-section3{
+
+	text-align: left;
+	font-family: arial;
+	font-size: 16px;
+	line-height: 18px;
+
+}
+.card-section3-btn{
+
+	background-color: #212121;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 6px;
+	width: 100%;
+	text-align: right;
+
+}
+.section3-button-icon{
+
+	color:#F5BB41;
+	font-size: 14px;
+	padding-left: 24px;
+}
+
+.container-customizing{
+
+	display: flex;
+	width: 100%;
+	background-color: #e1e1e1;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 24px;
+	line-height: 14px;
+
+}
+
+.customizing-button{
+
+	background-color: #F5BB41;
+    padding:14px 24px 14px 24px;
+    width: 75%;
+    display: flex;
+    color: #000000;
+   
+}
+
+.customizing-button-icon{
+
+	font-size: 14px;
+	padding-left: 12px;
+
+}
+
+.trade-value-container{
+
+	display: flex;
+	background-color: #d1d1d1;
+
+
+}
+
+.bluebook-image img{
+
+
+	display: block;
+	height: 150px;
+	width: auto;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+
+
+}
+
+.trade-value-title{
+
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+.trade-value-text{
+
+	font-family: arial;
+	font-size: 14px;
+	text-align: center;
+
+}
+.trade-value-button{
+
+	background-color: #F5BB41;
+    padding:14px 24px 14px 24px;
+    width: 100%;
+    color: #000000;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.label-icon{
+
+	font-weight: bold;
+	color: #000000;
+	font-size: 12px;
+}
+
+
+.btn-search{
+
+
+}
+
+.footer-links a{
+
+	font-size: 14px;
+	color: #bfbfbf;
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+}
+
+.footer-dropdown{
+
+	background-color: none;
+
+}
+
+}
+
+.kelley {
+	width: 150px;
+	height: 150px;
+}
+
+.fz-14 {
+	font-size: 14px;
+}
+.dark-grey {
+	background-color: #212121;
+	color: #bfbfbf;
+}
+.fz-12 {
+	font-size: 12px;
+}
+.fz-10 {
+	font-size: 10px;
+}
+.footer,
+.card-header,
+.collapse,
+.collapsing,
+.collapsed,
+.show,
+.btn-link {
+	background-color: black;
+	text-decoration: none;
+	color: white;
+}
+.text-w {
+	color: white;
+	text-decoration: none;
+}
+#p-footer {
+	color: #bfbfbf;
+}
+#p-footer:hover {
+	color: white;
+}
+.fab {
+	font-size: 28px;
+}
+.container-fluid {
+	max-width: 1440px;
+}
+.titles {
+	max-width: 600px;
+}
+.tag {
+	width: 55px;
+	height: 24;
+}
+.stuff {
+	max-width: 700px;
+}
+.slide1 {
+	background-color: rgba(0, 0, 0, .5);
+	width: 50%;
+	height: 320px;
+	position: absolute;
+	top: 5%;
+	left: 25%;
+	line-height: 1;
+}
+.slide2 {
+	width: 50%;
+	position: absolute;
+	left: 5%;
+}
+.ft-pn {
+	font-family: proxima-nova, sans-serif;
+}
+.fz-25 {
+	font-size: 25px;
+}
+.lh-15 {
+	line-height: 1.5;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	width: 5%;
+}
+
+
+
+/*background-color: rgba(0,0,0,.5);*/
+/*background box of carousel */
+
+/*https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/incentives/freedom-days-white-MY19.png*/
