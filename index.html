@@ -1,28 +1,112 @@
 <HTML>
-    <!doctype html>
+  <!DOCTYPE html>
   <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Bootstrap CSS -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
 
-
-
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-    <link rel="stylesheet" media="screen and (max-width: 700px)" href="small-screen.css">
-    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 940px)" href="medium-screen.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="./images/logo-jeep-blk.png">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets & Owners</title>
-  </head>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link
+        rel="stylesheet"
+        media="screen and (max-width: 700px)"
+        href="small-screen.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 600px) and (max-width: 940px)"
+        href="medium-screen.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Pets & Owners</title>
+    </head>
 
     <body>
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/logo.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          <i class="fas fa-paw-alt"></i>Pets & Owners</a
+        >
+      </nav>
 
+      <table class="table" id="mydatatable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Pet</th>
+            <th scope="col">Vacinations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
 
+      <!--Boostrap Data Tables Plugin-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="DataTables/datatables.min.css"
+      />
 
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="/DataTables/datatables.css"
+      />
+      <script
+        type="text/javascript"
+        charset="utf8"
+        src="/DataTables/datatables.js"
+      ></script>
+
+      <script>
+        $(document).ready(function() {
+          $("#mydatatable").DataTable();
+        });
+      </script>
     </body>
-</HTML>
+  </html></HTML
+>
