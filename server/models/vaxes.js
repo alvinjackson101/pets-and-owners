@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
-	const Owner = sequelize.define(
-		'owner',
+	const Vax = sequelize.define(
+		'vax',
 		{
 			id: {
 				type: DataTypes.UUID,
@@ -13,9 +13,15 @@ module.exports = (sequelize, DataTypes) => {
 				type: DataTypes.STRING,
 				required: true
 			},
-			role: {
-				type: DataTypes.ENUM,
-				values: [ 'user', 'admin', 'disabled' ]
+			pet_id: {
+				type: DataTypes.UUID,
+				required: true,
+				allowNull: false
+			},
+			administered: {
+				type: DataTypes.STRING,
+				required: true,
+				allowNull: false
 			},
 			created_at: {
 				type: DataTypes.DATE,
@@ -29,5 +35,5 @@ module.exports = (sequelize, DataTypes) => {
 			underscored: true
 		}
 	);
-	return Owner;
+	return Vax;
 };
